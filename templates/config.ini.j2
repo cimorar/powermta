@@ -1,0 +1,27 @@
+<domain yahoo.queue>
+    max-smtp-out                 20
+    max-msg-per-connection       20
+    smtp-greeting-timeout         5m
+    mx-connection-attempts       10
+    smtp-pattern-list              backoff
+    backoff-to-normal-after       2h
+    backoff-notify                 kevaugh@microsoft.com
+    backoff-max-msg-rate        600/h
+    backoff-retry-after          30m
+    route yahoo.com
+    password        {{ powermta_password1 }}
+</domain>
+
+<domain google.queue>
+    max-smtp-out                 20
+    max-msg-per-connection       20
+    smtp-greeting-timeout         5m
+    mx-connection-attempts       10
+    smtp-pattern-list              backoff
+    backoff-to-normal-after       2h
+    backoff-notify                 kevaugODh@microsoft.com
+    backoff-max-msg-rate        600/h
+    backoff-retry-after          30m
+    route yahoo.com
+    password        {{ powermta_password2 }}
+</domain>

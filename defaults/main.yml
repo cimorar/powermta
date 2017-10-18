@@ -1,0 +1,4 @@
+---
+# defaults file for powermta
+powermta_password1: RoleDefaultFirstClearTextPassword
+powermta_password2: RoleDefaultSecondClearTextPassword
